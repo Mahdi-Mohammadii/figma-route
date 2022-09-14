@@ -1,0 +1,36 @@
+@media screen and (min-width:576px) and (max-width: 767px)
+    .header__nav
+        padding: 3% 5%
+    .header__nav__ul
+        width: 100%
+        justify-content: center
+        margin: auto
+        li
+            @for $list from 2 through 4
+                &:nth-child(#{$list})
+                    margin-left: 32px
+    .header__nav__i
+        display: none
+
+    .header__container
+        padding: 23px 5% 46px 5%
+
+    .header__container__banner
+        grid-column: 3/span 4
+        grid-row: 1/span 2
+
+    .header__container__title
+        grid-column: 1 / span 2
+        grid-row: 1
+
+    .header__container__info
+        grid-column: 1 / span 2
+        grid-row: 2
+
+    .header__container__button
+        grid-column: 1 / span 2
+        grid-row: 3
+
+    .header__container__avatar-group
+        grid-column: 1 / span 2
+        grid-row: 4

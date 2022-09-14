@@ -1,0 +1,45 @@
+@media screen and (min-width: 768px)
+    .header__nav
+        padding: 18px 5%
+        max-width: 1140px
+        margin: auto
+        .header__nav__ul
+            width: 100%
+            justify-content: center
+            margin: auto
+            li
+                @for $list from 2 through 4
+                    &:nth-child(#{$list})
+                        margin-left: 77px
+
+    .header__container
+        padding: 60px 5% 50px 5%
+        max-width: 1140px
+        margin: auto
+
+    .header__container__banner
+        grid-column: 3/span 4
+        grid-row: 1/span 4
+    .header__container__title
+        grid-column: 1 / span 2
+        grid-row: 1
+        text-align: left
+        font-weight: 600
+        font-size: 40px
+        line-height: 61px
+        letter-spacing: 0.2px
+
+    .header__container__info
+        grid-column: 1 / span 2
+        grid-row: 2
+        text-align: left
+
+    .header__container__button
+        grid-column: 1 / span 2
+        grid-row: 3
+        margin: 0
+
+    .header__container__avatar-group
+        grid-column: 1 / span 2
+        grid-row: 4
+        margin: 0
